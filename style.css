@@ -121,6 +121,7 @@ footer
     border-radius: 30px;
     color: var(--branco-40);
     cursor: pointer;
+    text-align: center;
 }
 
 .login_button button:hover
