@@ -1,1 +1,1 @@
-# edtudoGid.github.io
+# gridestudo.github.io
