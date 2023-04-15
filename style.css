@@ -469,7 +469,18 @@ footer
       grid-template-columns: repeat(1, 1fr);
       padding: 3rem 2rem;
     }
-  
+    .container
+    {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    }
+    .perfil
+    {
+        display: none;
+    }
     .footer_icon {
       height: 2rem;
       width: 2rem;
@@ -483,7 +494,7 @@ footer
     .footer_lista {
       margin-top: 1rem;
     }
-    
+
     #caixa_email input {
       margin-bottom: 1rem;
     }
