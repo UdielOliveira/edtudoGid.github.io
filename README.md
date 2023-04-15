@@ -1,2 +1,2 @@
 # gridestudo.github.io
-http://estudogrid.com/
+https://udieloliveira.github.io/edtudoGid.github.io/
