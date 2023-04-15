@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alice&family=Almarai&family=Dosis&family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Inter;
+}
+body
+{
+    min-width: 350px;
+    overflow: hidden;
+    width: 100%;
+}
+/*------------------------------------Formulario-----------------------------------------*/
+.container
+{
+    background:linear-gradient(#00406c,#4267b3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form h1
+{
+    font-size: 40px;
+    position: relative;
+    cursor: pointer;
+}
+form h1:hover
+{
+    color: #00406c;
+    transition: 0.5s ease-in-out
+}
+form h1::before
+{
+    position: absolute;
+    content: "";
+    width: 40%;
+    background-color: #00406c;
+    height: 3px;
+    bottom: 2px;
+    border-radius: 10px;
+}
+form
+{
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00111c;
+    padding: 7rem 6rem;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px black;
+}
+
+.caixa_input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.caixa_input label
+{
+    font-size: 14px;
+}
+.input_fild
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid #00406c;
+}
+.input_fild i
+{
+    font-size: 18px;
+}
+.input_fild input
+{
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 18px;
+    padding: 0 5px;
+    color: white;
+}
+.input_fild input:focus
+{
+    outline: none;
+}
+#contas, .contas
+{
+    display: flex;
+    gap: 3rem;
+    font-size: 30px;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+#contas:hover
+{
+    transform: scale(1.15);
+    transition: 0.5s ease-in-out;
+    color: #00406c;
+}
+#login_button
+{
+    width: 100%;
+    border: none;
+    background-color: #00406c;
+    padding: 7px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#login_button:hover
+{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out
+}
