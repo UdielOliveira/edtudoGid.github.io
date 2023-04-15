@@ -49,7 +49,7 @@ header
 
 main
 {
-    background-color:var(--branco-40);
+    background:linear-gradient(to right,#00406c,#4267b3);
     grid-area: main;
 }
 
@@ -224,19 +224,19 @@ footer
 }
 .navegacao:hover
 {
-    background-color:var(--branco-40);
+    background:linear-gradient(to left,#00406c,#4267b3);
     border-radius: 50px 0px 0px 50px;
     transition: all 0.5s ease-out;
 }
 .navegacao a
 {
     text-decoration: none;
-    color: #00406c;
+    color: var(--branco-40);
 }
 #navegacao_icon
 {
     padding-right: 10px;
-    color:#00406c;
+    color:var(--branco-40);
 }
 
 /*-------------------------------SIDEBAR-------------------*/
