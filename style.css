@@ -51,6 +51,7 @@ main
 {
     background:linear-gradient(to right,#00406c,#4267b3);
     grid-area: main;
+    height: 200px;
 }
 ::-webkit-scrollbar
 {
@@ -496,8 +497,13 @@ footer
         display: grid;
         grid-template-areas:
         "header header header"
-        "sidebar main main"
+        "sidebar sidebar sidebar"
+        "main main main"
         "footer footer footer";
+    }
+    .sidebar_conteudo{
+        display: flex;
+        flex-direction: row;
     }
     .perfil
     {
