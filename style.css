@@ -52,7 +52,18 @@ main
     background:linear-gradient(to right,#00406c,#4267b3);
     grid-area: main;
 }
-
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #222020;
+    border-radius: 20px color(white);
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border-radius: 50px;
+    border: #fefefe 2px;
+}
 
 
 footer
