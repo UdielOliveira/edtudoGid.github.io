@@ -51,13 +51,14 @@ main
 {
     background:linear-gradient(to right,#00406c,#4267b3);
     grid-area: main;
-    height: 200px;
+    height: 100%;
 }
 ::-webkit-scrollbar
 {
     width: 12px;
     background-color: #222020;
     border-radius: 20px color(white);
+    border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb
 {
@@ -223,8 +224,8 @@ footer
 {
     padding: 30px 0px 30px 30px;
     font-size: 20px;
-    
 }
+
 .navegacao
 {
     list-style: none;
@@ -501,10 +502,94 @@ footer
         "main main main"
         "footer footer footer";
     }
-    .sidebar_conteudo{
-        display: flex;
-        flex-direction: row;
+    .navegacao
+    {
+    list-style: none;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    margin: 1rem;
+    color: var(--branco-40);
+    border-radius: 50px;
     }
+    .navegacao:hover
+    {
+    background:linear-gradient(to left,#00406c,#4267b3);
+    border-radius: 50px;
+    transition: all 0.5s ease-out;
+    }
+    .sidebar_conteudo ul
+    {
+        display: flex;
+        max-width: 250px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    main
+    {
+        height: 800px;
+    }
+
+    .perfil
+    {
+        display: none;
+    }
+    .footer_icon {
+      height: 2rem;
+      width: 2rem;
+      font-size: 1rem;
+    }
+  
+    #footer_social {
+      margin-top: 1rem;
+    }
+  
+    .footer_lista {
+      margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    #footer_conteudo {
+        display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3rem 2rem;
+    }
+    .container
+    {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "sidebar sidebar sidebar"
+        "main main main"
+        "footer footer footer";
+    }
+    .navegacao
+    {
+    list-style: none;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    margin: 1rem;
+    color: var(--branco-40);
+    border-radius: 50px;
+    }
+    .navegacao:hover
+    {
+    background:linear-gradient(to left,#00406c,#4267b3);
+    border-radius: 50px;
+    transition: all 0.5s ease-out;
+    }
+    .sidebar_conteudo ul
+    {
+        display: flex;
+        max-width: 480px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    main
+    {
+        height: 800px;
+    }
+
     .perfil
     {
         display: none;
