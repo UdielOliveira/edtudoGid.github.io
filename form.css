@@ -115,11 +115,7 @@ form
     transition: 0.5s ease-in-out;
     color: #00406c;
 }
-#login_button a
-{
-    text-decoration: none;
-    color: white;
-}
+
 #login_button
 {
     width: 100%;
