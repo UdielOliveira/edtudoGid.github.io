@@ -24,6 +24,7 @@ body
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -55,7 +56,7 @@ form
     flex-direction: column;
     align-items: center;
     background-color: #00111c;
-    padding: 7rem 6rem;
+    padding: 4rem 5rem;
     color: white;
     border-radius: 8px;
     box-shadow: 5px 5px 8px black;
@@ -128,8 +129,35 @@ form
     font-weight: bold;
     cursor: pointer;
 }
+
 #login_button:hover
 {
     transform: scale(1.05);
     transition: 0.5s ease-in-out
+}
+
+.voltar_button
+{
+    margin-top: 20px;
+    width: 10rem;
+    border: none;
+    padding: 7px;
+    background-color: #00406c;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.voltar_button:hover
+{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out
+}
+
+@media screen and (max-width: 426px) {
+    form
+    {
+        padding: 4rem 2rem;
+    }
 }
